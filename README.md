@@ -1,3 +1,4 @@
+[![GitHub Downloads](https://img.shields.io/github/downloads/formeo/afterburner-ffb/total.svg?style=flat-square&logo=github)](https://github.com/formeo/afterburner-ffb/releases)
 # afterburner-ffb
 
 Force feedback for the **Thrustmaster Top Gun Afterburner Force Feedback** joystick (USB `044F:B550`)
