@@ -1,0 +1,5 @@
+driver/build/
+__pycache__/
+*.pyc
+afb-diag-*/
+afb-diag-*.tar.gz

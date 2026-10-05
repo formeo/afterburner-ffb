@@ -1,0 +1,34 @@
+name: build
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  windows-binaries:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install mingw-w64
+        run: sudo apt-get update && sudo apt-get install -y g++-mingw-w64-x86-64 g++-mingw-w64-i686 zip
+
+      - name: Build
+        run: driver/build.sh "${GITHUB_REF_NAME//\//-}"
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: afbffb-windows
+          path: driver/build/afbffb-*.zip
+
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: driver/build/afbffb-*.zip
+          prerelease: true
