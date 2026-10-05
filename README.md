@@ -1,5 +1,10 @@
-[![GitHub Downloads](https://img.shields.io/github/downloads/formeo/afterburner-ffb/total.svg?style=flat-square&logo=github)](https://github.com/formeo/afterburner-ffb/releases)
 # afterburner-ffb
+
+[![Build Status](https://img.shields.io/github/actions/workflow/status/formeo/afterburner-ffb/build.yml?branch=main&style=flat-square&label=Build)](https://github.com/formeo/afterburner-ffb/actions)
+[![License](https://img.shields.io/github/license/formeo/afterburner-ffb?style=flat-square)](https://github.com/formeo/afterburner-ffb/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/formeo/afterburner-ffb?style=flat-square)](https://github.com/formeo/afterburner-ffb/releases)
+[![Language](https://img.shields.io/github/languages/top/formeo/afterburner-ffb?style=flat-square)]()
+[![Downloads](https://img.shields.io/github/downloads/formeo/afterburner-ffb/total?style=flat-square&label=Downloads)](https://github.com/formeo/afterburner-ffb/releases)
 
 Force feedback for the **Thrustmaster Top Gun Afterburner Force Feedback** joystick (USB `044F:B550`)
 on modern Windows, without a kernel driver.
